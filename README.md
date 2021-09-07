@@ -60,12 +60,12 @@ For Front-End:
 
 ### How to setup the mongodb:
 
+- First create a '.env' file the create a key like 'MONGO_URI=' and paste the below command. Make sure you first create
+  an account in [Mongodb atlas](https://www.mongodb.com/cloud/atlas)
 ```
-First create a '.env' file the create a key like 'MONGO_URI=' and paste the below command. Make sure you first create
-an account in [Mongodb atlas](https://www.mongodb.com/cloud/atlas)
 mongodb+srv://yourusername:<password>@cluster0.m9l4p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-use your username and password and database name here you created in MongoDB atlas
 ```
+- Use your username and password and database name here you created in MongoDB atlas
 
 ### Output:
 
