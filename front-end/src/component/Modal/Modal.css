@@ -1,0 +1,104 @@
+.modalshow{
+    display: block;
+}
+.modalhide{
+    display: none;
+}
+.modal {
+    position: fixed;
+    z-index: 10;
+    left: 990px;
+    top: 250px;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+  }
+.btn1{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    background-color: rgb(101, 16, 180);
+    color: #fff;
+    backdrop-filter: blur(5px);
+    border: none;
+    float: right;
+    font-weight: light;
+    cursor: pointer;
+}
+.modalcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.modalcontent h2{
+    font-size: 1rem;
+    text-align: center;
+    margin-left: -30px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding: 20px;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mail{
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0px;
+}
+.mail input{
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+.textarea{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    overflow: hidden;
+    resize: vertical;
+    max-width: 400px;
+    max-height: 200px;
+    height: 90px;
+    line-height: 20px;
+    width:95%;
+}
+.modalbtn{
+    height: 55px;
+    width: 55px;
+    position: fixed;
+    right: 23px;
+    bottom: 20px;
+    background-color: rgb(101, 16, 180);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 12px;
+}
+.fa-paper-plane{
+    font-size: 20px;
+}
+@media (max-width:1000px){
+    .modal{
+        left:400px;
+    }
+}
+@media (max-width:640px) {
+    .modal{
+        left:0px;
+        top:100px;
+    }
+    .textarea{
+        width: 80%;
+    }
+}
