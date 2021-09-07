@@ -29,7 +29,10 @@ For Front-End:
   "react-scripts": "4.0.3",
   "web-vitals": "^1.1.2"
 ```
-
+### Clone this repo :
+```
+git clone https://github.com/rajbir21-droid/blogwebsite.git
+```
 ### How to install the above Library :
 
 - Change to the directory using -
