@@ -70,11 +70,6 @@ use your username and password and database name here you created in MongoDB atl
 ### Output:
 
 #### Input Image
-- First you have to register if you are not already registered:-
- ![image](https://user-images.githubusercontent.com/64858573/125296469-f359e180-e343-11eb-9080-3e976f8540c7.png)
-#### Input Image
-- Then you have to login using your registered username and password:- \*![image](https://user-images.githubusercontent.com/64858573/125297489-e689bd80-e344-11eb-9e80-c8432888b1ef.png)
-#### Output Image
-- Then if you want then logout press the logout button:-
- ![image](https://user-images.githubusercontent.com/64858573/125298640-f524a480-e345-11eb-8d6e-e8335df52d09.png)
-
+- First you have to register to write a blog if you are already registered:-
+- The home page:-
+![image](https://user-images.githubusercontent.com/64858573/132358926-3bae47ac-17d9-476e-8dae-09f2201dc797.png)
