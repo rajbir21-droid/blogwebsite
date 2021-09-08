@@ -76,3 +76,4 @@ mongodb+srv://yourusername:<password>@cluster0.m9l4p.mongodb.net/myFirstDatabase
 - First you have to register to write a blog if you are already registered:-
 - The home page:-
 ![image](https://user-images.githubusercontent.com/64858573/132362013-eff01415-70c6-4ea0-a66a-641047f058f9.png)
+<p style="center">Please give a 🌟</p>
