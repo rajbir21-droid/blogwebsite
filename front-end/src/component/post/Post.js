@@ -12,10 +12,10 @@ export default function Post({ post }) {
             ))}
           </div> */}
           <Link to={`/post/${post._id}`} className="link">
-          {post.title}?(
+          {post.title?(
           <span className="postTitle">{post.title}</span>):
           (<span className="postTitle">Post Title</span>
-          )
+          )}
           </Link>
           <hr />
           <span className="postDate">
