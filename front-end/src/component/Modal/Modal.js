@@ -28,6 +28,12 @@ const Modal=({setmoda,moda})=>{
         <button className='btn1' onClick={modalClose}>&times;</button>
         <h2>Please Leave your message here!!!</h2>
             <form ref={formRef} className="mail" onSubmit={handleSubmit}>
+                <label>Name</label>
+                <input type="text" 
+                   placeholder="Name"
+                   name="user_name"
+                   required
+                />
                 <label>Email</label>
                 <input  type="email" 
                    placeholder="email"
