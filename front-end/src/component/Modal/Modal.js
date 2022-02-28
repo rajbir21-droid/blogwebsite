@@ -1,34 +1,24 @@
-import React,{useState} from 'react'
+import React,{useRef, useState} from 'react'
 import './Modal.css'
-import { axiosInstance } from '../../config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import emailjs from 'emailjs-com';
 const Modal=({setmoda,moda})=>{
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+    const formRef = useRef();
     const [success,setSuccess]=useState(false);
-    const [error,setError]=useState(false);
-    const handleSubmit = async(e)=>{
+    const handleSubmit = (e)=>{
         e.preventDefault();
-        setError(false);
-        if(email==="" || message===""){
-            setSuccess(false);
-            setError(true);
-        }
-        try{
-            const res = await axiosInstance.post("/addname",{
-                email,
-                message
-            });
-            res.data && setSuccess(true);
-        }catch(err){
-            setSuccess(false);
-            setError(true);
-            console.log("kuch toh garbar hain");
-        }
+        emailjs.sendForm('service_86ctvjh', 
+        'template_3t32d7k', 
+        formRef.current, 'QpabEFMEiF4yEqIfc')
+        .then((result) => {
+            console.log(result.text);
+            setSuccess(true);
+        }, (error) => {
+            console.log(error.text);
+        });
     }
     const modalClose=()=>{
-        setError(false);
         setSuccess(false);
         setmoda(false);
     }
@@ -37,27 +27,23 @@ const Modal=({setmoda,moda})=>{
         <div className='modalcontent'>
         <button className='btn1' onClick={modalClose}>&times;</button>
         <h2>Please Leave your message here!!!</h2>
-            <form className="mail" onSubmit={handleSubmit}>
+            <form ref={formRef} className="mail" onSubmit={handleSubmit}>
                 <label>Email</label>
                 <input  type="email" 
                    placeholder="email"
-                   onChange={(e)=> setEmail(e.target.value)}
+                   name="user_email"
                    required
                 />
                 <label>Message</label>
                 <textarea 
                 placeholder="message" 
                  className="textarea"
-                 onChange={(e)=>setMessage(e.target.value)}
+                 name='message'
                  required
                  />
                  <button className="modalbtn" type="submit"><FontAwesomeIcon className="fa-paper-plane" icon={faPaperPlane}/></button>
             </form>
-            {success && <span 
-            style={{color:"green", marginTop:"10px"}}>
-            Successfully send !!!</span>}
-            {error && <span style={{color:"red", marginTop:"10px"}}>
-            Something went wrong!</span>}
+            {success && "Thank you!!"}
             </div>
         </div>
     )
