@@ -29,7 +29,10 @@ For Front-End:
   "react-scripts": "4.0.3",
   "web-vitals": "^1.1.2"
 ```
-
+### Clone this repo :
+```
+git clone https://github.com/rajbir21-droid/blogwebsite.git
+```
 ### How to install the above Library :
 
 - Change to the directory using -
@@ -72,4 +75,5 @@ mongodb+srv://yourusername:<password>@cluster0.m9l4p.mongodb.net/myFirstDatabase
 #### Input Image
 - First you have to register to write a blog if you are already registered:-
 - The home page:-
-![image](https://user-images.githubusercontent.com/64858573/132358926-3bae47ac-17d9-476e-8dae-09f2201dc797.png)
+![image](https://user-images.githubusercontent.com/64858573/132362013-eff01415-70c6-4ea0-a66a-641047f058f9.png)
+<p align="center">If you like it please give a 🌟</p>
